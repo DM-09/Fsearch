@@ -1,0 +1,11 @@
+.nav-bg { background-color: #E3F2FD; }
+.nav-color { color: black !important; }
+.body, input { background-color: white; color: black; }
+.c-body { background-color: white !important; color: black !important; border-color: gray !important; }
+
+@media (prefers-color-scheme: dark) {
+  .nav-bg { background-color: #212529; }
+  .nav-color { color: white !important; }
+  .body, input { background-color: black !important; color: white !important; }
+  .c-body { background-color: black !important; color: white !important; border-color: gray !important; }
+}
