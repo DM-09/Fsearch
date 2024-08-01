@@ -1,7 +1,12 @@
-var url = ['https://search.naver.com/search.naver?query=', 'https://google.com/search?q=', 'https://terms.naver.com/search.naver?query=']
+var url = ['https://search.naver.com/search.naver?query=', 'https://google.com/search?q=', 'https://terms.naver.com/search.naver?query=', 'https://encykorea.aks.ac.kr/Article/Search/']
 
 function search(n) {
-  var q = document.querySelector("#search").value;
+  var q = document.querySelector("#search").value
+  window.open(url[n] + q)
+}
+
+function search2(n) {
+  var q = document.querySelector("#search").value
   window.open(url[n] + q)
 }
 
