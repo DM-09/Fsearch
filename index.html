@@ -40,6 +40,7 @@
       <btn type="button" onclick='search(0)' class="btn btn-secondary mt-3">네이버</btn>
       <btn type="button" onclick='search(1)' class="btn btn-secondary mt-3">구글</btn>
       <btn type="button" onclick='search(2)' class="btn btn-secondary mt-3">네이버 지식백과</btn>
+      <btn type="button" class="btn btn-secondary mt-3" data-bs-toggle="modal" data-bs-target="#modal"> 기타 </btn>
       <btn type="button" onclick='getAIans()' class="btn btn-secondary mt-3">AI 답변</btn>
       <br>
       <div class='mt-2' style='color: gray;'>검색어 입력 후 원하는 플랫폼의 버튼을 누르면 해당 플랫폼에서의 검색 결과로 이동합니다. <br> AI 답변은 google의 AI, Bard가 답변하며 답변 까지 몇 초 소요 됩니다.(오정보가 있을 수 있음)</div>
@@ -48,5 +49,15 @@
       
       <span class="" id="res" align="center"><br><br> </span>
     </center>
+      <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1">
+     <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+       <div class="modal-body nav-bg nav-color"><h5 class="modal-title font-weight-lg" id='m-title'>기타 사이트</h5><p class="font-weight-md" id='m-content'></p><a href='#' onclick='search2(3)'>한국민족문화대백과사전</a> <a href='#'></a><div class="d-grid gap-2 d-flex justify-content-end"><button button-color="btn-light" button-text-color="text-dark" is-dismiss="true" class="col col-md-auto btn btn-dark text-light" data-bs-dismiss="modal" id='m-close'>닫기</button></div></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
   </body>
 </html>
